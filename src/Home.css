@@ -1,0 +1,29 @@
+
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+ .jk{
+   padding-bottom: 3%;
+   background-color: #0dcaf0;
+ }
+ 
+.search input {
+ margin-top: 2%;
+  font-size: 15px;
+  border: none;
+  height: 33px;
+  text-decoration: none;
+ 
+}
+
+.search  button {
+   padding: 8px 10px;
+   margin-top: 2%;
+   
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+}
+
+.search button:hover {
+  background: #ccc;
+}
