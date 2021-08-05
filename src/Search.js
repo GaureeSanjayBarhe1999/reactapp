@@ -14,11 +14,11 @@ export default function Search({ fetchNewsApiData }) {
             <form  onSubmit={handleSubmit}>
                 <input
                     type='text'
-                    name='searchBar'
+                  
                     aria-label='Search Bar'
                     placeholder='Type Some Keywords'></input>
 
-                      <button type="submit" ><i class="fa fa-search"></i></button>
+                      <button type="submit" ><i className="fa fa-search"></i></button>
             </form>
             </center>
         </div>
