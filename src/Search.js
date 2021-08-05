@@ -7,7 +7,7 @@ export default function Search({ fetchNewsApiData }) {
         let searchTerm = event.target[0].value;
         fetchNewsApiData(searchTerm);
     }
-
+    
     return (
         <div className="search" >
           <center>

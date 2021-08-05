@@ -1,27 +1,18 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './Newsapp.css';
 import './Home.css';
 import axios from "axios";
 import Search from'./Search.js';
 const Home =()=> {
     const [articles,setArticles]=useState([]);
-    useEffect(()=>{
-        const fetchArticles=async ()=>{
-            try{
-                const res=await fetch('https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=7ab9f0d94d1e434fb09e18a0dbcc8b0c')
-                const art=await res.json()
-                setArticles(art.articles)
-                console.log(art.articles)
-            }catch(error){
-                console.log(error);
-            }
-        }
-        fetchArticles()
-    },[])    
+   
+
+   
     async function fetchNewsApiData(searchQuery) {
         if (searchQuery === "") {
             return alert("Search Required");
         }
+       
         let newsData = await axios.get(
             `https://gnews.io/api/v3/search?q=${searchQuery}&token=d823322f70a243c01a0da4d04ba47363`
         );
@@ -38,7 +29,7 @@ const Home =()=> {
          
           <h1 className="jk">
 
-              <Search fetchNewsApiData={fetchNewsApiData}/>
+              <Search fetchNewsApiData={fetchNewsApiData} />
           </h1 >
             {articles && articles.map((item) => (
                 <>

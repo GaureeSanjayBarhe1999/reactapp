@@ -25,5 +25,15 @@
 }
 
 .search button:hover {
-  background: #ccc;
+  background: rgb(189, 182, 182);
+}
+
+
+@media (max-width: 660px) {
+  .collapse navbar-collapse {
+    padding: 10px 10px;
+    height: 150px;
+  }
+
+
 }

@@ -1,37 +1,33 @@
 import React from 'react';
 
 
-class Header extends React.Component {
-   
+const Header =()=> {
+ 
+    
 
-    render() {
+   
         return (
             <>  
-            <center><h1>NEWS APP</h1></center>
-                
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                   
-                    <div className="collapse navbar-collapse" id="navbarNav" >
-                        <ul className="navbar-nav" >
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Newsapp" >technology</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Newsapp1">entertainment</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Newsapp2">sports</a>
-                        </li>
-                    
-                        </ul>
-                    </div>
-                    </nav>
+                      <center><h1>NEWS APP</h1></center>
+                      <div className="navbar navbar-expand-lg navbar-light bg-light">
+                      <ul className="navbar-nav">
+                      <li className="nav-item active">
+                      <a className="nav-link" href="/">Home</a>
+                      </li>
+                      <li className="nav-item active" >
+                      <a className="nav-link" href="/Newsapp" >technology</a>
+                      </li>
+                      <li className="nav-item active">
+                      <a className="nav-link" href="/Newsapp1">entertainment</a>
+                     </li>
+                     <li className="nav-item active" >
+                    <a  className="nav-link" href="/Newsapp2">Sports</a>
+                     </li>
+                    </ul></div>
+        
             </>
         );
         }
-}
+
 
 export default Header;

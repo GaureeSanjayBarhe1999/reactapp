@@ -63,7 +63,7 @@
   color: #44444d;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   .newsCard {
     flex-direction: column;
     width: 100%;
@@ -73,6 +73,7 @@
     height: 100%;
     padding-bottom: 20px;
   }
+
 }
 button{
     background: transparent;
