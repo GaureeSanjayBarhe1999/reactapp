@@ -1,4 +1,4 @@
-
+/*
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -52,7 +52,7 @@ const App=()=>  {
   );
 
 }
-
+export default App;
 /*
 import React from 'react';
 import './App.css';
@@ -65,5 +65,33 @@ function App() {
     </div>
   );
 }
-*/
+
 export default App;
+*/
+
+//import logo from './logo.svg';
+//import './App.css';
+import { Component } from 'react';
+import Header from "./newmintra/Header.js";
+import Main from './newmintra/Main.js';
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+function App() {
+ 
+ 
+  return (
+    <>
+         <div>
+         <div> <Header /></div>
+      
+        <div><Main /></div>
+        </div>
+       </>
+    
+  );
+}
+
+export default App;
+
+
